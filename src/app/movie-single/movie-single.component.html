@@ -1,0 +1,13 @@
+<h2 class="is-bold h2-word">{{ movie.title }}</h2>
+<div class="movie-tiles-container" *ngIf="movie">
+  <div class="movie-img">
+    <img src="./assets/img/movie/{{ movie.title }}.jpg" alt="" />
+    <p class="tile-text">
+      Episode : {{ movie.episode_id }} <br />
+      Director : {{ movie.director }} <br />
+      Producer : {{ movie.producer }} <br />
+      Release Date : {{ movie.release_date }} <br />
+      Created : {{ movie.created }} <br />
+    </p>
+  </div>
+</div>

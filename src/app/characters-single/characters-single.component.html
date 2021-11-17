@@ -1,0 +1,15 @@
+<h2 class="is-bold h2-word">{{ actor.name }}</h2>
+<div class="character-tiles-container" *ngIf="actor">
+  <div class="character-img">
+    <img src="./assets/img/characters/{{ actor.name }}.jpg" alt="" />
+    <p class="tile-text">
+      Name : {{ actor.name }} <br />
+      Height : {{ actor.height }} <br />
+      Birth Year : {{ actor.birth_year }} <br />
+      Mass : {{ actor.mass }} <br />
+      Gender : {{ actor.gender }} <br />
+      Skin Color : {{ actor.skin_color }} <br />
+      Eye Color : {{ actor.eye_color }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<h2 class="is-bold h2-word">Characters List</h2>
+<div class="characters-tiles-container" *ngIf="actors">
+  <div *ngFor="let actor of actors; let i = index">
+    <a [routerLink]="'' + (i + 1)" class="characters-tile"
+      >{{ actor.name }}
+      <p class="tile-text">
+        Height : {{ actor.height }} <br />
+        Birth Year : {{ actor.birth_year }}
+      </p>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<h2 class="is-bold h2-word">Movies List</h2>
+<div class="movies-tiles-container" *ngIf="movies">
+  <div *ngFor="let movie of movies; let i = index">
+    <a [routerLink]="'' + (i + 1)" class="movies-tile"
+      >{{ movie.title }}
+      <p class="tile-text">
+        Episode : {{ movie.episode_id }} <br />
+        Release Date : {{ movie.release_date }}
+      </p>
+    </a>
+  </div>
+</div>
